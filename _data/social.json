@@ -1,8 +1,8 @@
 [
   {
-    "name": "Github",
-    "link": "https://github.com/zerostaticthemes/jekyll-serif-theme",
-    "image": "images/social/github.svg"
+    "name": "LinkedIn",
+    "link": "https://linkedin.com",
+    "image": "images/social/LinkedIn_icon.svg"
   },
   {
     "name": "Twitter",
@@ -10,24 +10,9 @@
     "image": "images/social/twitter.svg"
   },
   {
-      "name": "Facebook",
-      "link": "https://facebook.com",
-      "image": "images/social/facebook.svg"
-  },
-  {
       "name": "Email",
       "link": "mailto:ekyllserif@example.com ",
       "image": "images/social/email.svg"
-  },
-  {
-      "name": "Instagram",
-      "link": "https://instagram.com",
-      "image": "images/social/instagram.svg"
-  },
-  {
-      "name": "Discord",
-      "link": "https://discord.com",
-      "image": "images/social/discord.svg"
   }
 
 ]
