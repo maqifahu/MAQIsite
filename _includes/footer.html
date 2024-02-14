@@ -1,19 +1,19 @@
-<div class="footer">
+<footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="footer-inner">
-          <h2 class="footer-title">{{site.title}}</h2>
-          <ul>
-            {% assign footermenu = site.data.menus.footer | sort: 'weight'  %}
-            {% for item in footermenu %}
-            <li class="{% if item.url == page.url %}active{% endif %}">
-              <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
+      <div class="footer-col">
+        <h3>About Us</h3>
+        <p>MAQI is a university spin-off company in the field of advanced material with focus on the manufacturing and development of custom-designed optical crystals based on metal-organic frameworks for a variety of applications in photonics industry.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Address</h3>
+        <p>Cerro El Plomo 5931, 1213. Las Condes, Santiago. Chile.</p>
+        <h3>Email</h3>
+        <p><a href="mailto:Info@maqi.cl"><img src="images/social/email.svg" alt="Email">Info@maqi.cl</a></p>
+        <h3>Social Networks</h3>
+        <p><a href="https://cl.linkedin.com/company/maqi-spa"><img src="images/social/LinkedIn_icon.svg" alt="LinkedIn">LinkedIn</a></p>
+        <p><a href="https://twitter.com/maqi_cl"><img src="images/social/twitter.svg" alt="Twitter">Twitter</a></p>
       </div>
     </div>
   </div>
-</div>
+</footer>

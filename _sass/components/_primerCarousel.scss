@@ -1,0 +1,95 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.slides-container {
+  display: flex;
+  width: 300vw;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  width: 100vw;
+  height: 80vh;
+  /* Puedes ajustar esto según necesites */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+
+  /* Ajuste para que el texto no sea demasiado grande en dispositivos pequeños */
+  @media (max-width: 768px) {
+    font-size: 1.5em;
+    /* Reduce el tamaño del texto en dispositivos más pequeños */
+    padding: 20px;
+    /* Añade algo de padding para evitar que el texto toque los bordes */
+  }
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 24px;
+
+  /* Ajustes para botones en pantallas pequeñas */
+  @media (max-width: 768px) {
+    font-size: 18px;
+    /* Hace el botón un poco más pequeño */
+    padding: 5px 10px;
+    /* Reduce el padding del botón */
+  }
+}
+
+.prev,
+.next {
+
+  /* Ajustes para botones en pantallas muy pequeñas */
+  @media (max-width: 480px) {
+    display: none;
+    /* Opcional: oculta los botones en pantallas muy pequeñas */
+  }
+}
+
+/* Adicionalmente, si necesitas ajustar la altura del slide en pantallas pequeñas */
+@media (max-width: 768px) {
+  .slide {
+    height: 120vh;
+    /* Ajusta la altura para dispositivos más pequeños */
+  }
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+
+
+
+
+@media (max-width: 480px) {
+  .slide {
+    font-size: 1em; /* Reduce aún más el tamaño del texto para pantallas muy pequeñas */
+    padding: 10px; /* Ajusta el padding para asegurar que el texto no toque los bordes */
+  }
+}
+
+.slide img {
+  max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  @media (max-width: 768px) {
+    max-height: 50vh; /* Limita la altura de la imagen en dispositivos pequeños */
+  }
+}

@@ -1,6 +1,6 @@
-baseurl: '/'
+baseurl: "/"
 permalink: pretty
-title: 'MAQI'
+title: "MAQI"
 
 logo:
   mobile: "images/logo/MAQI_Logo.svg"
@@ -10,7 +10,7 @@ logo:
   desktop_height: "64px"
   desktop_width: "120px"
 
-home: 
+home:
   limit_services: 6
 
 collections:

@@ -1,65 +1,55 @@
 .footer {
-  background: $footer-background-color;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  .footer-inner {
-    display: flex;
-    justify-content: space-between;
+  background: $secondary;
+  color: black;
+  padding: 20px 0;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .footer-col {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.footer h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer p {
+  line-height: 1.6;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  display: block; /* Hace que cada enlace se muestre en su propia línea */
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer a img {
+  vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+  margin-right: 8px; /* Espacio entre la imagen y el texto */
+  width: 24px; /* Ancho fijo para las imágenes */
+  height: auto; /* La altura se ajusta automáticamente */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer .container {
     flex-direction: column;
-    align-items: flex-start;
-    @include media-breakpoint-up(sm) {
-      justify-content: space-between;
-      flex-direction: row;
-      align-items: center;
-    }
   }
-  .footer-title {
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-family: $font-family-heading;
-    font-weight: bold;
-    margin-bottom: 10px;
-    @include media-breakpoint-up(sm) {
-      margin: 0;
-    }
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      color: $footer-text-color;
-      font-size: 1rem;
-      a {
-        color: $footer-text-color;
-        text-decoration: none;
-        padding: 12px 14px 12px 0;
-        display: block;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-    @include media-breakpoint-up(sm) {
-      height: inherit;
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      align-items: center;
-      justify-content: flex-end;
-      li {
-        list-style: none;
-        margin-right: 10px;
-        &:last-of-type {
-          margin-right: 0;
-        }
-        a {
-          display: inline-block;
-          height: 40px;
-          padding: 10px 8px 10px 8px;
-        }
-      }
-    }
+
+  .footer .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
