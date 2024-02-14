@@ -15,8 +15,8 @@ slides:
     class: ''
     image_absolute: false
     image_hide_on_mobile: false
-  - title: "MIRO-101 Crystal"
-    content: "MIRO-101 crystal is our first Metal-Organic Framework (MOF) product designed for optical frequency conversion. 
+  - title: "MIRO - 101 Crystal"
+    content: "MIRO - 101 crystal is our first Metal-Organic Framework (MOF) product designed for optical frequency conversion. 
     Highly efficient second and third harmonic generation  can be achieved by pumping wavelengths at 1030nm."
     image: "images/carousel/Imagen3.png"
     class: 'tercera-imagen'
