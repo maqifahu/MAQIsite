@@ -12,6 +12,11 @@
               <p>
                 {{ slide.content }}
               </p>
+              {% if slide.show_contact_button %}
+              <div class="contact-container">
+                <a href="/contact" class="contact-button">Order now</a>
+              </div>
+              {% endif %}
             </div>
             {% if slide.image %}
             <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">

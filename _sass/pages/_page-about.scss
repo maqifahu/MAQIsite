@@ -1,0 +1,23 @@
+// en assets/css/styles.scss
+
+.page-about {
+
+  img {
+      width: 150px; // Ajusta según tus necesidades
+      height: 150px; // Asegúrate de que el ancho y alto sean iguales para un círculo perfecto
+      border-radius: 50%; // Esto hace que la imagen sea circular
+      border: 3px solid #333; // Un borde sólido opcional
+      margin-bottom: 1em; // Espacio debajo de la imagen
+  }
+
+  h3 {
+      margin-top: 1em;
+  }
+
+  a {
+      color: #0066cc;
+      &:hover {
+          text-decoration: underline;
+      }
+  }
+}

@@ -9,12 +9,14 @@ slides:
     class: ''
     image_absolute: false
     image_hide_on_mobile: false
+    show_contact_button: false
   - title: "Engineering on material science"
     content: "We offer state-of-the-art solutions based on computational physics, materials science and optics that will power your photonics applications with competitive advantages across the evolving optical industry landscape."
     image: "images/carousel/carousel2.webp"
     class: ''
     image_absolute: false
     image_hide_on_mobile: false
+    show_contact_button: false
   - title: "MIRO - 101 Crystal"
     content: "MIRO - 101 crystal is our first Metal-Organic Framework (MOF) product designed for optical frequency conversion. 
     Highly efficient second and third harmonic generation  can be achieved by pumping wavelengths at 1030nm."
@@ -22,4 +24,5 @@ slides:
     class: 'tercera-imagen'
     image_absolute: false
     image_hide_on_mobile: false
+    show_contact_button: true
 ---

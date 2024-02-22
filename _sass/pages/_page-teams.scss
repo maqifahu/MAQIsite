@@ -1,33 +1,44 @@
 .page-teams {
+  .link {
+    color: $texto-gris;
+  }
   .team-summary {
+    color: $texto-negro-gris !important;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+
     .team-image {
       height: 60px;
       width: 60px;
       margin-right: 10px;
       border-radius: 50%;
       overflow: hidden;
+
       img {
         width: 60px;
       }
     }
+
     .team-meta {
       flex: 1;
+      font-family: Arial, Helvetica, sans-serif, -apple-system;
+      
+
       h2 {
         margin: 0;
         font-size: 22px;
         font-weight: normal;
       }
+
       p {
-        color: $primary;
         text-transform: uppercase;
         margin: 0;
         font-size: 12px;
         font-weight: 500;
       }
     }
+
     .team-content {
       margin-top: 20px;
       flex: 1 0 100%;
@@ -38,14 +49,16 @@
     background-color: $white-offset;
     padding: 30px;
     border-radius: 3px;
+
     .team-image {
-      height: 90px;
-      width: 90px;
+      height: 190px;
+      width: 190px;
       margin-right: 20px;
       border-radius: 50%;
       overflow: hidden;
+
       img {
-        width: 90px;
+        width: 190px;
       }
     }
   }

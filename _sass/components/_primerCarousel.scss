@@ -1,7 +1,6 @@
 .slider {
   position: relative;
   overflow: hidden;
-  width: 100vw;
 }
 
 .slides-container {
@@ -11,6 +10,7 @@
 }
 
 .slide {
+  background-color: white;
   width: 100vw;
   height: 80vh;
   /* Puedes ajustar esto según necesites */
@@ -76,20 +76,50 @@
   left: 10px;
 }
 
-
-
-
 @media (max-width: 480px) {
   .slide {
-    font-size: 1em; /* Reduce aún más el tamaño del texto para pantallas muy pequeñas */
-    padding: 10px; /* Ajusta el padding para asegurar que el texto no toque los bordes */
+    font-size: 1em;
+    /* Reduce aún más el tamaño del texto para pantallas muy pequeñas */
+    padding: 10px;
+    /* Ajusta el padding para asegurar que el texto no toque los bordes */
   }
 }
 
 .slide img {
-  max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
+  max-width: 100%;
+  /* Asegura que la imagen no sea más ancha que el contenedor */
+  height: auto;
+
+  /* Mantiene la proporción de la imagen */
   @media (max-width: 768px) {
-    max-height: 50vh; /* Limita la altura de la imagen en dispositivos pequeños */
+    max-height: 50vh;
+    /* Limita la altura de la imagen en dispositivos pequeños */
+  }
+}
+
+.contact-container {
+
+  .contact-button {
+    background-color: $secondary; // Un color llamativo para la acción de compra
+    color: white; // Texto blanco para contraste
+    border: none; // Sin borde para un aspecto más limpio
+    padding: 15px 30px; // Espaciado interno para hacer el botón grande y fácil de clickear
+    font-size: 1.2em; // Un tamaño de fuente más grande para llamar la atención
+    border-radius: 5px; // Bordes redondeados para un aspecto moderno
+    cursor: pointer; // Cambia el cursor para indicar que es clickeable
+    transition: background-color 0.3s ease; // Suaviza el cambio de color al pasar el mouse
+
+    &:hover {
+      background-color: $primary-dark; // Oscurece el botón al pasar el mouse para indicar interactividad
+    }
+
+    &:focus {
+      outline: none; // Evita el resplandor azul alrededor del botón cuando se hace clic
+      box-shadow: 0 0 0 2px rgba(255, 69, 0, 0.5); // Agrega un sombreado para la accesibilidad
+    }
+
+    &:active {
+      transform: scale(0.98); // Efecto de clic para mejorar la retroalimentación al usuario
+    }
   }
 }
