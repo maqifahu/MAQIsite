@@ -1,43 +1,73 @@
+.contact {
+  .contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 
+    .icon {
+      width: 40px; // Tamaño del ícono
+      margin-right: 16px; // Espacio entre el ícono y el texto
+    }
 
-.form-container {
-  
-  font-family: Helvetica, Arial, sans-serif, -apple-system;
-  background-color: $secondary;
-  color: $texto-negro-gris;
-  max-width: 400px;
-  margin: 20px auto 20px auto;
-  padding: 20px;
+    .contact-info {
+      text-align: left;
+
+      h3 {
+        margin: 0 0 5px 0; // Espacio debajo del título
+        color: #333; // Color oscuro para el texto
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 25px;
+        margin: 0; // Elimina márgenes predeterminados
+        color: #666; // Color gris para el texto
+      }
+
+      a {
+        color: $texto-negro-gris; // Color para enlaces, similar al azul de enlace por defecto
+        text-decoration: none; // Sin subrayado
+
+        &:hover {
+          text-decoration: underline; // Subrayado al pasar el mouse
+        }
+      }
+    }
+  }
+
+  .social-networks {
+    .social-links {
+      display: flex; // Alinear los íconos de redes sociales horizontalmente
+
+      a {
+        margin-right: 10px; // Espacio entre íconos
+
+        &:last-child {
+          margin-right: 0; // Elimina el margen para el último ícono
+        }
+
+        img {
+          width: 24px; // Tamaño del ícono de redes sociales
+        }
+      }
+    }
+  }
 }
 
-.form-introduction p, h2{
-  color: $texto-negro-gris;
-  font-family: Helvetica, Arial, sans-serif, -apple-system;
+.address {
+  text-align: center;
+  font-size: 20px;
 }
 
-input[type=text],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: $primary;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: $primary-dark;
+.contenedor-contacto {
+  background-color: $white-footer;
+  display: flex;
+  flex-direction: column;
+  /* width: 662px; */
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

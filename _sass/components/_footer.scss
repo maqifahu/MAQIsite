@@ -1,5 +1,5 @@
 .footer {
-  background: $secondary;
+  background: $white-footer;
   color: black;
   padding: 20px 0;
 }
@@ -24,12 +24,12 @@
 .footer p {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: $texto-gris;
   line-height: 1.6;
 }
 
 .footer a {
-  color: white;
+  color: $texto-gris;
   text-decoration: none;
   display: block; /* Hace que cada enlace se muestre en su propia línea */
 }

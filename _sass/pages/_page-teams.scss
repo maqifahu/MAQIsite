@@ -1,7 +1,7 @@
-.page-teams {
   .link {
     color: $texto-gris;
   }
+
   .team-summary {
     color: $texto-negro-gris !important;
     display: flex;
@@ -23,7 +23,7 @@
     .team-meta {
       flex: 1;
       font-family: Arial, Helvetica, sans-serif, -apple-system;
-      
+
 
       h2 {
         margin: 0;
@@ -62,4 +62,3 @@
       }
     }
   }
-}
