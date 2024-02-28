@@ -6,7 +6,7 @@ bodyClass: "page-teams"
 <div class="intro">
     <div class="container">
         <div class="row justify-content-start">
-            <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+            <div class="col-12 order-2 order-md-1">
                 {{ content }}
             </div>
             {% if page.intro_image %}
@@ -32,22 +32,21 @@ bodyClass: "page-teams"
                         src="{{ team.image | relative_url }}" />
                 </div>
                 {% endif %}
-                <div class="team-meta">
+                <div class="team-content">
                     <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
-                    <p class="team-description">{{ team.jobtitle }}</p>
-                    {% if team.linkedinurl %}
-                    <a class="link" target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
-                    {% endif %}
+                    {{ team.excerpt }}
+                    <div class="container-social">
+                        {% if team.linkedinurl %}
+                        <p><a href="{{ team.linkedinurl | relative_url }}"><img class="team-social-media" src="/images/social/LinkedIn_icon.svg"
+                                    alt="LinkedIn"></a></p>
+                        {% endif %}
 
-                    {% if team.whatsapp %}
-                    <p>WhatsApp: {{team.whatsapp}}</p>
-                    {% endif %}
-
-                    {% if team.email %}
-                    <p>Email: {{team.email | downcase}}</p>
-                    {% endif %}
+                        {% if team.twitter %}
+                        <p><a href="{{ team.twitter | relative_url }}"><img class="team-social-media" src="/images/contact/twitter-x.svg"
+                                    alt="Twitter"></a></p>
+                        {% endif %}
+                    </div>
                 </div>
-                <div class="team-content">{{ team.excerpt }}</div>
             </div>
         </div>
         {% endfor %}
@@ -65,8 +64,10 @@ bodyClass: "page-teams"
                 {% endif %}
                 <div class="team-meta">
                     <h2 class="team-name"><a class="link" href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
-                    <p class="team-description">{{ team.jobtitle }}</p>
+                    <h2>{{ team.jobtitle }}</h2>
                 </div>
+
+
             </div>
         </div>
         {% endfor %}

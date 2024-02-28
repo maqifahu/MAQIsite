@@ -7,11 +7,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
     .team-image {
       height: 60px;
       width: 60px;
-      margin-right: 10px;
       border-radius: 50%;
       overflow: hidden;
 
@@ -40,6 +41,7 @@
     }
 
     .team-content {
+      text-align: center;
       margin-top: 20px;
       flex: 1 0 100%;
     }
@@ -53,7 +55,6 @@
     .team-image {
       height: 190px;
       width: 190px;
-      margin-right: 20px;
       border-radius: 50%;
       overflow: hidden;
 
@@ -61,4 +62,20 @@
         width: 190px;
       }
     }
+  }
+
+  .container-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team-social-media a img {
+    vertical-align: middle;
+    /* Alinea la imagen verticalmente con el texto */
+    width: 24px;
+    /* Ancho fijo para las imágenes */
+    height: auto;
+    /* La altura se ajusta automáticamente */
   }
