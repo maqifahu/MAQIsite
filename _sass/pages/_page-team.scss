@@ -1,4 +1,41 @@
-
+// Estilo base para h1
 h1 {
   color: $texto-negro-gris;
+  // Puedes ajustar el tamaño del texto para pantallas grandes si es necesario
+}
+
+// Responsividad para la imagen
+.team-img {
+  max-width: 300px;
+  height: auto;
+}
+
+// Media query para pantallas pequeñas
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .div-team-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-4,
+  .col-8 {
+    // Hace que las columnas tomen el ancho completo en pantallas pequeñas
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    // Ajusta el tamaño del texto para pantallas pequeñas si es necesario
+    font-size: 1.5rem; // Ejemplo de ajuste de tamaño
+  }
+
+  .content {
+    // Ajusta el tamaño del texto del contenido si es necesario
+    font-size: 1rem; // Ejemplo de ajuste de tamaño
+  }
 }

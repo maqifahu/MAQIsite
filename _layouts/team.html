@@ -5,13 +5,18 @@ bodyClass: "page-team"
 
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
   <div class="row justify-content-start">
-    <div class="col-4">
-      <img src="{{page.image | relative_url}}" alt="">
+    <div class="col-12 order-1">
+      <div class="row div-team-img">
+        <img class="team-img" src="{{page.image | relative_url}}" alt="">
+      </div>
+
+      <div class="row">
+        <h1 class="title">{{page.title}}</h1>
+      </div>
+      
     </div>
-    <div class="col-8">
-      <h1 class="title">{{page.title}}</h1>
+    <div class="col-12 order-2">
       <div class="content">{{page.cv}}</div>
     </div>
   </div>
-</div>
 </div>

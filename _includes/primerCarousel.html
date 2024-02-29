@@ -12,11 +12,6 @@
               <p>
                 {{ slide.content }}
               </p>
-              <!-- {% if slide.show_contact_button %}
-              <div class="contact-container">
-                <a href="/contact" class="contact-button">Order now</a>
-              </div>
-              {% endif %} -->
             </div>
             {% if slide.image %}
             <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
@@ -44,30 +39,6 @@
   const nextButton = document.getElementById('next');
   const slidesContainer = document.querySelector('.slides-container');
   const slideInterval = 10000;
-
-  let touchstartX = 0;
-  let touchendX = 0;
-
-
-  function handleSwipe() {
-    if (touchendX < touchstartX) {
-      // Deslizamiento hacia la izquierda
-      moveNext();
-    }
-    if (touchendX > touchstartX) {
-      // Deslizamiento hacia la derecha
-      movePrev();
-    }
-  }
-
-  slidesContainer.addEventListener('touchstart', e => {
-    touchstartX = e.changedTouches[0].screenX;
-  }, false);
-
-  slidesContainer.addEventListener('touchend', e => {
-    touchendX = e.changedTouches[0].screenX;
-    handleSwipe();
-  }, false);
 
   function moveNext() {
     currentIndex = (currentIndex + 1) % totalSlides;
@@ -102,6 +73,5 @@
   // Opcional: detener el carrusel automático al pasar el ratón por encima y reiniciarlo al quitar el ratón
   slidesContainer.addEventListener('mouseenter', () => stopAutoSlide(autoSlideInterval));
   slidesContainer.addEventListener('mouseleave', () => autoSlideInterval = startAutoSlide());
-
 
 </script>

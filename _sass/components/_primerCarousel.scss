@@ -12,7 +12,8 @@
 .slide {
   background-color: white;
   width: 100vw;
-  height: 80vh;
+  height: 500px; /* Ajusta este valor según sea necesario */
+  overflow: hidden;
   /* Puedes ajustar esto según necesites */
   display: flex;
   justify-content: center;
@@ -47,16 +48,6 @@
     /* Hace el botón un poco más pequeño */
     padding: 5px 10px;
     /* Reduce el padding del botón */
-  }
-}
-
-.prev,
-.next {
-
-  /* Ajustes para botones en pantallas muy pequeñas */
-  @media (max-width: 480px) {
-    display: none;
-    /* Opcional: oculta los botones en pantallas muy pequeñas */
   }
 }
 

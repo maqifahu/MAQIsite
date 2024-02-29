@@ -10,7 +10,8 @@ slides:
     image_absolute: false
     image_hide_on_mobile: false
     show_contact_button: false
-  - title: "Engineering on material science"
+  - title: "Enabling photonics innovations with Metal-Organic Frameworks"
+  # "Engineering on material science"
     content: "We offer state-of-the-art solutions based on computational physics, materials science and optics that will power your photonics applications with competitive advantages across the evolving optical industry landscape."
     image: "images/carousel/carousel1.jpeg"
     class: ''
