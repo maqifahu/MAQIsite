@@ -1,77 +1,25 @@
-<div class="slider">
-  <div class="slides-container">
-    {% for slide in page.slides %}
-    <div class="slide">
-      <div class="intro">
-        <div class="container">
-          <div class="row justify-content-start">
-            <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-              <h1>
-                {{slide.title}}
-              </h1>
-              <p>
-                {{ slide.content }}
-              </p>
-            </div>
-            {% if slide.image %}
-            <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-              <img alt="{{ slide.title }}"
-                class="intro-image{% if slide.image_absolute %} intro-image-absolute{% endif %}{% if slide.image_hide_on_mobile %} intro-image-hide-mobile{% endif %} {{slide.class}}"
-                src="{{ slide.image | prepend: site.baseurl }}" />
-            </div>
-            {% endif %}
-          </div>
-        </div>
+{% for slide in page.slides %}
+<div class="container my-5">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+      <h1 class="title-carousel">
+        {{slide.title}}
+      </h1>
+      <p>
+        {{ slide.content }}
+      </p>
+
+      <div class="call-box-bottom">
+        <a href="solutions" class="button-cal-box">Learn more</a>
       </div>
     </div>
-    {% endfor %}
+    {% if slide.image %}
+    <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+      <img alt="{{ slide.title }}"
+        class="intro-image{% if slide.image_absolute %} intro-image-absolute{% endif %}{% if slide.image_hide_on_mobile %} intro-image-hide-mobile{% endif %} {{slide.class}}"
+        src="{{ slide.image | prepend: site.baseurl }}" />
+    </div>
+    {% endif %}
   </div>
-  <button id="prev" class="slider-btn prev">&#10094;</button>
-  <button id="next" class="slider-btn next">&#10095;</button>
 </div>
-
-
-<script>
-  let currentIndex = 0;
-  const totalSlides = 3;
-
-  const prevButton = document.getElementById('prev');
-  const nextButton = document.getElementById('next');
-  const slidesContainer = document.querySelector('.slides-container');
-  const slideInterval = 10000;
-
-  function moveNext() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    updateSlidePosition();
-  }
-
-  function movePrev() {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    updateSlidePosition();
-  }
-
-  prevButton.addEventListener('click', movePrev);
-  nextButton.addEventListener('click', moveNext);
-
-  function updateSlidePosition() {
-    slidesContainer.style.transform = `translateX(-${currentIndex * 100}vw)`;
-  }
-
-  // Función para iniciar el carrusel automático
-  function startAutoSlide() {
-    return setInterval(moveNext, slideInterval);
-  }
-
-  // Función para detener el carrusel automático
-  function stopAutoSlide(intervalId) {
-    clearInterval(intervalId);
-  }
-
-  // Iniciar el carrusel automático al cargar la página
-  let autoSlideInterval = startAutoSlide();
-
-  // Opcional: detener el carrusel automático al pasar el ratón por encima y reiniciarlo al quitar el ratón
-  slidesContainer.addEventListener('mouseenter', () => stopAutoSlide(autoSlideInterval));
-  slidesContainer.addEventListener('mouseleave', () => autoSlideInterval = startAutoSlide());
-
-</script>
+{% endfor %}

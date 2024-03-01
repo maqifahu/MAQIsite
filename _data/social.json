@@ -1,18 +1,18 @@
 [
   {
     "name": "LinkedIn",
-    "link": "https://linkedin.com",
+    "link": "https://www.linkedin.com/company/maqi",
     "image": "images/social/LinkedIn_icon.svg"
   },
   {
     "name": "Twitter",
-    "link": "https://twitter.com/zerostaticio",
-    "image": "images/social/twitter.svg"
+    "link": "https://twitter.com/maqi_cl",
+    "image": "images/contact/twitter-x.svg"
   },
   {
       "name": "Email",
-      "link": "mailto:ekyllserif@example.com ",
-      "image": "images/social/email.svg"
+      "link": "mailto:EmailInfo@maqi.cl",
+      "image": "images/contact/Email.svg"
   }
 
 ]

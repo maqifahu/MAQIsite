@@ -9,7 +9,7 @@
   }
 
   .product-title {
-    font-size: 24px;
+    font-size: 50px;
     margin-bottom: 20px;
   }
 
@@ -39,6 +39,11 @@
   }
 }
 
+.img-solution {
+  width: 30%;
+  margin-top: 20px;
+}
+
 @media (max-width: 768px) {
   .specs {
     flex-direction: column;
@@ -48,5 +53,9 @@
       margin: 0;
       width: 100%;
     }
+  }
+
+  .img-solution {
+    width: 90%;
   }
 }

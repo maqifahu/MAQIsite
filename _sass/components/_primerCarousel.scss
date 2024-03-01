@@ -1,116 +1,41 @@
-.slider {
-  position: relative;
-  overflow: hidden;
+
+.title-carousel{
+  font-family: $font-family-heading;
 }
 
-.slides-container {
-  display: flex;
-  width: 300vw;
-  transition: transform 0.5s ease;
-}
-
-.slide {
-  background-color: white;
-  width: 100vw;
-  height: 500px; /* Ajusta este valor según sea necesario */
-  overflow: hidden;
-  /* Puedes ajustar esto según necesites */
+.call-box-bottom {
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 2em;
+  flex: auto;
+  padding: 20px;
+  border-top: 1px solid darken($white-offset, 5%);
 
-  /* Ajuste para que el texto no sea demasiado grande en dispositivos pequeños */
-  @media (max-width: 768px) {
-    font-size: 1.5em;
-    /* Reduce el tamaño del texto en dispositivos más pequeños */
-    padding: 20px;
-    /* Añade algo de padding para evitar que el texto toque los bordes */
+  @include media-breakpoint-up(sm) {
+    flex: 0 0 auto;
+    border: none;
   }
 }
 
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 20px;
-  font-size: 24px;
-
-  /* Ajustes para botones en pantallas pequeñas */
-  @media (max-width: 768px) {
-    font-size: 18px;
-    /* Hace el botón un poco más pequeño */
-    padding: 5px 10px;
-    /* Reduce el padding del botón */
-  }
-}
-
-/* Adicionalmente, si necesitas ajustar la altura del slide en pantallas pequeñas */
-@media (max-width: 768px) {
-  .slide {
-    height: 120vh;
-    /* Ajusta la altura para dispositivos más pequeños */
-  }
-}
-
-.next {
-  right: 10px;
-}
-
-.prev {
-  left: 10px;
-}
-
-@media (max-width: 480px) {
-  .slide {
-    font-size: 1em;
-    /* Reduce aún más el tamaño del texto para pantallas muy pequeñas */
-    padding: 10px;
-    /* Ajusta el padding para asegurar que el texto no toque los bordes */
-  }
-}
-
-.slide img {
-  max-width: 100%;
-  /* Asegura que la imagen no sea más ancha que el contenedor */
-  height: auto;
-
-  /* Mantiene la proporción de la imagen */
-  @media (max-width: 768px) {
-    max-height: 50vh;
-    /* Limita la altura de la imagen en dispositivos pequeños */
-  }
-}
-
-.contact-container {
-
-  .contact-button {
-    background-color: $secondary; // Un color llamativo para la acción de compra
-    color: white; // Texto blanco para contraste
-    border: none; // Sin borde para un aspecto más limpio
-    padding: 15px 30px; // Espaciado interno para hacer el botón grande y fácil de clickear
-    font-size: 1.2em; // Un tamaño de fuente más grande para llamar la atención
-    border-radius: 5px; // Bordes redondeados para un aspecto moderno
-    cursor: pointer; // Cambia el cursor para indicar que es clickeable
-    transition: background-color 0.3s ease; // Suaviza el cambio de color al pasar el mouse
-
-    &:hover {
-      background-color: $primary-dark; // Oscurece el botón al pasar el mouse para indicar interactividad
-    }
-
-    &:focus {
-      outline: none; // Evita el resplandor azul alrededor del botón cuando se hace clic
-      box-shadow: 0 0 0 2px rgba(255, 69, 0, 0.5); // Agrega un sombreado para la accesibilidad
-    }
-
-    &:active {
-      transform: scale(0.98); // Efecto de clic para mejorar la retroalimentación al usuario
-    }
+.button-cal-box {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 30px;
+  //box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: $primary;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  &:hover {
+    color: #ffffff;
+    background-color: lighten($primary, 10%);
+    transform: translateY(-1px);
+    //box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
   }
 }
