@@ -6,6 +6,7 @@ h1 {
 
 .content-justify-cv {
   text-align: justify;
+  color: $texto-gris;
 }
 
 // Responsividad para la imagen
@@ -41,5 +42,6 @@ h1 {
   .content {
     // Ajusta el tamaño del texto del contenido si es necesario
     font-size: 1rem; // Ejemplo de ajuste de tamaño
+    
   }
 }

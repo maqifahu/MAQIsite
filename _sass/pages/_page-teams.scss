@@ -6,6 +6,14 @@
     text-align: justify;
   }
 
+  .team-name-title {
+    color: $texto-negro-gris;
+  }
+
+  .team-excerpt {
+    color: $texto-gris !important;
+  }
+
   .team-summary {
     color: $texto-negro-gris !important;
     display: flex;
@@ -27,7 +35,7 @@
 
     .team-meta {
       flex: 1;
-      font-family: Arial, Helvetica, sans-serif, -apple-system;
+
 
 
       h2 {

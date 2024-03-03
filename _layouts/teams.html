@@ -26,8 +26,11 @@ bodyClass: "page-teams"
                 </div>
                 {% endif %}
                 <div class="team-content">
-                    <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
-                    {{ team.excerpt }}
+                    <h2 class="team-name"><a class="team-name-title" href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
+
+                    <p class="team-excerpt">
+                        {{ team.excerpt }}
+                    </p>
                     <div class="container-social">
                         {% if team.linkedinurl %}
                         <p><a href="{{ team.linkedinurl | relative_url }}"><img class="team-social-media" src="/images/social/LinkedIn_icon.svg"

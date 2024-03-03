@@ -12,16 +12,19 @@
     display: flex;
   }
 
-  .product-title-text {
-    font-size: 50px;
-    margin-bottom: 20px;
-    font-family: $font-family-heading;
+  .spec-desc {
+    color: $texto-gris;
   }
 
-  .product-title-number {
-    font-size: 50px !important; 
+  .spec-title {
+    color: $texto-negro-gris;
+  }
+
+  .product-title-text {
+    font-size: 50px;
+    color: $texto-negro-gris;
     margin-bottom: 20px;
-    font-family: Helvetica, sans-serif system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell !important;
+    font-family: Helvetica, Arial, sans-serif, -apple-system !important;
   }
 
   .specs {

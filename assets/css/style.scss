@@ -13,7 +13,6 @@ $steel: $white-offset;
 
 $white-footer: #F6F6F6;
 
-
 $bg-oscuro: #2e2e2e;
 $bg-oscuro-mas-claro: #4c4c4c;
 
@@ -105,6 +104,7 @@ $sub-footer-text-color: $white;
 @import "pages/page-service";
 @import "pages/page-about";
 @import "pages/page-solutions";
+@import "pages/page-products";
 
 body {
 
