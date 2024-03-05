@@ -7,6 +7,7 @@ cv: Marco is responsible for the synthesis of metal-organic frameworks at lab an
 promoted: true
 linkedinurl: "https://www.linkedin.com/in/marco-gonzalez-carvajal-0b4542296/"
 weight: 2
+isMarco: true
 ---
 
 Lab & Production Specialist

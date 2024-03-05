@@ -20,26 +20,28 @@ bodyClass: "page-teams"
         <div class="col-12 col-md-6 mb-2">
             <div class="team team-summary team-summary-large">
                 {% if team.image %}
-                <div class="team-image">
+                <div class="{% if team.isMarco %}team-image-marco{% else %}team-image{% endif %}">
                     <img width="90" height="90" alt="{{ team.title }}" class="img-fluid mb-2"
                         src="{{ team.image | relative_url }}" />
                 </div>
+
                 {% endif %}
                 <div class="team-content">
-                    <h2 class="team-name"><a class="team-name-title" href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
+                    <h2 class="team-name"><a class="team-name-title" href="{{ team.url | relative_url }}">{{ team.title
+                            }}</a></h2>
 
                     <p class="team-excerpt">
                         {{ team.excerpt }}
                     </p>
                     <div class="container-social">
                         {% if team.linkedinurl %}
-                        <p><a href="{{ team.linkedinurl | relative_url }}"><img class="team-social-media" src="/images/social/LinkedIn_icon.svg"
-                                    alt="LinkedIn"></a></p>
+                        <p><a href="{{ team.linkedinurl | relative_url }}"><img class="team-social-media"
+                                    src="/images/social/LinkedIn_icon.svg" alt="LinkedIn"></a></p>
                         {% endif %}
 
                         {% if team.twitter %}
-                        <p><a href="{{ team.twitter | relative_url }}"><img class="team-social-media" src="/images/contact/twitter-x.svg"
-                                    alt="Twitter"></a></p>
+                        <p><a href="{{ team.twitter | relative_url }}"><img class="team-social-media"
+                                    src="/images/contact/twitter-x.svg" alt="Twitter"></a></p>
                         {% endif %}
                     </div>
                 </div>

@@ -8,6 +8,7 @@
 
   .team-name-title {
     color: $texto-negro-gris;
+    font-family: $font-family-heading;
   }
 
   .team-excerpt {
@@ -30,6 +31,8 @@
 
       img {
         width: 60px;
+        // max-width: 100%;
+        // height: auto;
       }
     }
 
@@ -64,16 +67,36 @@
     padding: 30px;
     border-radius: 3px;
 
-    .team-image {
+    .team-image-marco {
       height: 190px;
-      width: 190px;
+      width: auto;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+
+      img {
+        width: 220px;
+        // max-width: 100%;
+        // height: auto;
+      }
+    }
+
+
+
+    .team-image {
+      height: auto;
+      width: auto;
       border-radius: 50%;
       overflow: hidden;
 
       img {
         width: 190px;
+        // max-width: 100%;
+        // height: auto;
       }
     }
+
+
   }
 
   .container-social {
