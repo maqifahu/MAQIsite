@@ -1,7 +1,15 @@
 {% for slide in page.slides %}
-<div class="container my-5">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+<div class="container my-5 d-flex justify-content-center">
+  <div class="row justify-content-center text-width-container">
+    {% if slide.image %}
+    <div class="col-12">
+      <img alt="{{ slide.title }}"
+        class="mb-3 intro-image{% if slide.image_absolute %} intro-image-absolute{% endif %}{% if slide.image_hide_on_mobile %} intro-image-hide-mobile{% endif %} {{slide.class}}"
+        src="{{ slide.image | prepend: site.baseurl }}" />
+    </div>
+    {% endif %}
+
+    <div class="col-12">
       <h1 class="title-carousel">
         {{slide.title}}
       </h1>
@@ -13,13 +21,7 @@
         <a href="solutions" class="button-cal-box">Learn more</a>
       </div>
     </div>
-    {% if slide.image %}
-    <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-      <img alt="{{ slide.title }}"
-        class="intro-image{% if slide.image_absolute %} intro-image-absolute{% endif %}{% if slide.image_hide_on_mobile %} intro-image-hide-mobile{% endif %} {{slide.class}}"
-        src="{{ slide.image | prepend: site.baseurl }}" />
-    </div>
-    {% endif %}
+
   </div>
 </div>
 {% endfor %}
