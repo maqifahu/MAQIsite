@@ -1,5 +1,5 @@
 ---
-title: Our story
+title: Our story EDITED
 layout: page
 description: Learn more about our team and company.
 permalink: "/about/"
