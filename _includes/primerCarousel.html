@@ -1,16 +1,16 @@
 {% for slide in page.slides %}
-<div class="container my-5 d-flex justify-content-center">
-  <div class="row justify-content-center text-width-container">
+<div class="container my-5">
+  <div class="row justify-content-center">
     {% if slide.image %}
-    <div class="col-12">
+    <div class="col-12 d-flex justify-content-center">
       <img alt="{{ slide.title }}"
-        class="mb-3 intro-image{% if slide.image_absolute %} intro-image-absolute{% endif %}{% if slide.image_hide_on_mobile %} intro-image-hide-mobile{% endif %} {{slide.class}}"
+        class="mb-3 img-width-carousel intro-image{% if slide.image_absolute %} intro-image-absolute{% endif %}{% if slide.image_hide_on_mobile %} intro-image-hide-mobile{% endif %} {{slide.class}}"
         src="{{ slide.image | prepend: site.baseurl }}" />
     </div>
     {% endif %}
 
     <div class="col-12">
-      <h1 class="title-carousel">
+      <h1>
         {{slide.title}}
       </h1>
       <p class="p-primerCarousel-justificado">

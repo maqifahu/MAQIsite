@@ -9,7 +9,7 @@ main:
     url: "/team"
     weight: 4
   - name: "About us"
-    url: "/about"
+    url: "/aboutUs"
     weight: 5
   - name: "Contact"
     url: "/contact"
