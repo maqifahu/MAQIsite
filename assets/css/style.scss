@@ -130,5 +130,41 @@ body {
 // CUSTOM COMMON STYLES
 
 .img-width-carousel {
-  width: 50%;
+  width: 60%; /* Default width for screens larger than 1200px */
 }
+
+/* For very small screens (less than 480px) */
+@media only screen and (max-width: 479px) {
+  .img-width-carousel {
+    width: 100%;
+  }
+}
+
+/* For small screens */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .img-width-carousel {
+    width: 100%;
+  }
+}
+
+/* For tablets */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .img-width-carousel {
+    width: 80%;
+  }
+}
+
+/* For small desktops */
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+  .img-width-carousel {
+    width: 70%;
+  }
+}
+
+/* For large desktops */
+@media only screen and (min-width: 1200px) {
+  .img-width-carousel {
+    width: 60%;
+  }
+}
+
