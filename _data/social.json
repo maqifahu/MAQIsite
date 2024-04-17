@@ -1,7 +1,7 @@
 [
   {
     "name": "LinkedIn",
-    "link": "https://www.linkedin.com/company/maqi",
+    "link": "https://www.linkedin.com/company/maqi-materials/",
     "image": "images/social/LinkedIn_icon.svg"
   },
   {
@@ -10,9 +10,8 @@
     "image": "images/contact/twitter-x.svg"
   },
   {
-      "name": "Email",
-      "link": "mailto:info@maqi.cl",
-      "image": "images/contact/Email.svg"
+    "name": "Email",
+    "link": "mailto:info@maqi.cl",
+    "image": "images/contact/Email.svg"
   }
-
 ]

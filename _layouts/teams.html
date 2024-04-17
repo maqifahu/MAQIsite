@@ -3,7 +3,7 @@ layout: default
 bodyClass: "page-teams"
 ---
 <div class="container my-5">
-    <h1>Super Team</h1>
+    <!-- <h1>Super Team</h1> -->
     <div class="row">
         {% assign promoted_teams = site.team | where: "promoted", true | sort: "weight" %}
         {% for team in promoted_teams %}
@@ -25,12 +25,12 @@ bodyClass: "page-teams"
                     </p>
                     <div class="container-social">
                         {% if team.linkedinurl %}
-                        <p><a href="{{ team.linkedinurl | relative_url }}"><img class="team-social-media"
+                        <p><a href="{{ team.linkedinurl | relative_url }}" target="_blank"><img class="team-social-media"
                                     src="/images/social/LinkedIn_icon.svg" alt="LinkedIn"></a></p>
                         {% endif %}
 
                         {% if team.twitter %}
-                        <p><a href="{{ team.twitter | relative_url }}"><img class="team-social-media"
+                        <p><a href="{{ team.twitter | relative_url }}" target="_blank"><img class="team-social-media"
                                     src="/images/contact/twitter-x.svg" alt="Twitter"></a></p>
                         {% endif %}
                     </div>
