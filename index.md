@@ -6,7 +6,7 @@ slides:
   - title: "Enabling Innovations in Photonics with Metal-Organic Frameworks"
     content: "MAQI provides custom-designed optical crystals based on metal-organic frameworks for a variety of applications in optical industry. \
     We offer state-of-the-art solutions based on computational physics, materials science and optics that will power your photonics applications with competitive advantages across the evolving optical industry landscape."
-    image: "images/carousel/carousel2.webp"
+    image: "images/carousel/maqi-home.png"
     class: ''
     image_absolute: false
     image_hide_on_mobile: false
